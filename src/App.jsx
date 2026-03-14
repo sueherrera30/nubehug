@@ -7,7 +7,9 @@ import SignUp from './pages/SignUp';
 import Dashboard from './pages/Dashboard';
 import Academy from './pages/Academy';
 import NubeAlianzas from './pages/NubeAlianzas';
+import NubeTalento from './pages/NubeTalento';
 import ProtectedRoute from './components/ProtectedRoute';
+import Chatbot from './components/Chatbot';
 
 function App() {
   return (
@@ -42,7 +44,16 @@ function App() {
                 </ProtectedRoute>
               }
             />
+            <Route
+              path="/talento"
+              element={
+                <ProtectedRoute>
+                  <NubeTalento />
+                </ProtectedRoute>
+              }
+            />
           </Routes>
+          <Chatbot />
         </MainLayout>
       </Router>
     </AuthProvider>

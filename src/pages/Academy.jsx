@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Search, Megaphone, PackageSearch, ReceiptText, PlayCircle, Clock, BookOpen, Star } from 'lucide-react';
+import { Search, Megaphone, PackageSearch, ReceiptText, PlayCircle, Clock, BookOpen, Star, Cloudy } from 'lucide-react';
 
 export default function Academy() {
   const [activeCategory, setActiveCategory] = useState('Todos');
@@ -27,14 +27,20 @@ export default function Academy() {
     : coursesDB.filter(c => c.category === activeCategory);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-blue-50/50 to-cyan-100 font-sans pb-20">
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-blue-50/50 to-cyan-100 py-8 font-sans relative overflow-hidden">
+      {/* Decorative Clouds */}
+      <div className="absolute top-10 left-10 text-white/40 animate-float-slow"><Cloudy size={120} /></div>
+      <div className="absolute top-40 right-20 text-white/30 animate-float"><Cloudy size={80} /></div>
+      <div className="absolute bottom-20 left-1/4 text-white/50 animate-float-slow" style={{ animationDelay: '2s' }}><Cloudy size={100} /></div>
+
+      <div className="relative z-10">
       
       {/* Hero Section */}
       <div className="pt-12 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-slate-900">
-              NubeHug <span className="text-nimbus-blue">Academy</span>
+              NubeHug <span className="text-nimbus-blue">Academy 🎓</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-600 mb-8 max-w-md font-medium">
               Aprende a tu ritmo para hacer crecer tu negocio. Soluciones prácticas y cursos completos en un solo lugar.
@@ -193,6 +199,7 @@ export default function Academy() {
           </div>
         </div>
 
+        </div>
       </div>
     </div>
   );

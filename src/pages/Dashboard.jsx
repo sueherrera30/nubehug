@@ -1,11 +1,16 @@
 import React from 'react';
-import { Coins, ChevronRight, Star } from 'lucide-react';
+import { Coins, ChevronRight, Star, Cloudy } from 'lucide-react';
 
 export default function Dashboard() {
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-blue-50/50 to-cyan-100 py-8 font-sans">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-blue-50/50 to-cyan-100 py-8 font-sans relative overflow-hidden">
+      {/* Decorative Clouds */}
+      <div className="absolute top-10 left-10 text-white/40 animate-float-slow"><Cloudy size={120} /></div>
+      <div className="absolute top-40 right-20 text-white/30 animate-float"><Cloudy size={80} /></div>
+      <div className="absolute bottom-20 left-1/4 text-white/50 animate-float-slow" style={{ animationDelay: '2s' }}><Cloudy size={100} /></div>
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
