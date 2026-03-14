@@ -80,21 +80,21 @@ export default function HeroSection() {
   // Logged Out State: Public Landing
   return (
     <section className="relative overflow-hidden bg-white py-24 sm:py-32">
-      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 flex flex-col items-center">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 flex flex-col items-center pt-8">
         
-        <div className="relative w-full max-w-xl flex justify-center -mb-24 mt-8">
+        <div className="relative w-full max-w-xl flex justify-center mb-6">
             <img 
                src="/nubehug-logo.png?v=4" 
                alt="NubeHug Logo" 
-               className="relative z-10 w-full h-auto mix-blend-multiply hover:scale-105 transition-transform duration-700"
+               className="relative z-10 w-48 sm:w-64 h-auto mix-blend-multiply hover:scale-105 transition-transform duration-700"
             />
         </div>
 
         <div className="mx-auto max-w-2xl text-center relative z-20">
-          <h1 className="text-4xl font-extrabold tracking-tight text-brand-blue-dark sm:text-6xl mb-6">
-            NubeHug: El impulso que tu sueño necesita para hacerse realidad
+          <h1 className="text-3xl font-extrabold tracking-tight text-brand-blue-dark sm:text-5xl mb-6 px-2">
+            El impulso que tu sueño necesita para hacerse realidad
           </h1>
-          <p className="mt-6 text-lg leading-8 text-slate-600 mb-10 max-w-xl mx-auto font-medium">
+          <p className="mt-6 text-base sm:text-lg leading-8 text-slate-600 mb-10 max-w-xl mx-auto font-medium px-4">
             Somos el puente entre tu gran producto y el éxito comercial. Conecta, aprende y colabora con otros emprendedores para llevar tu tienda al siguiente nivel.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6 flex-col sm:flex-row gap-y-4">

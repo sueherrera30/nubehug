@@ -84,17 +84,17 @@ export default function NubeAlianzas() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Header */}
-        <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-sm border border-brand-blue-light/30 p-8 mb-8 flex flex-col items-center text-center relative overflow-hidden group min-h-[300px] justify-end">
+        <div className="bg-white/90 backdrop-blur-md rounded-3xl shadow-sm border border-brand-blue-light/30 p-6 sm:p-8 mb-8 flex flex-col items-center text-center relative overflow-hidden group">
           
-          <div className="absolute top-4 left-1/2 -translate-x-1/2 z-0">
-             <img src="/nubehug_3d_alianzas_transparent.png" alt="NubeHug Comunidad" className="w-64 h-auto animate-float drop-shadow-xl hover:scale-105 transition-transform duration-500" />
+          <div className="relative z-10 sm:mt-4 mb-4">
+             <img src="/nubehug_3d_alianzas_transparent.png" alt="NubeHug Comunidad" className="w-48 sm:w-64 h-auto animate-float drop-shadow-xl hover:scale-105 transition-transform duration-500 relative z-10" />
           </div>
 
-          <div className="relative z-10 bg-white/60 backdrop-blur-sm p-4 rounded-2xl">
-            <h1 className="text-4xl font-extrabold text-brand-blue-dark tracking-tight mb-2 flex items-center justify-center gap-3">
+          <div className="relative z-20 bg-white/80 backdrop-blur-md p-4 sm:p-6 rounded-2xl w-full max-w-2xl shadow-sm border border-white/50">
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-brand-blue-dark tracking-tight mb-2 flex items-center justify-center gap-2 sm:gap-3 flex-wrap">
                hug me: <span className="text-nimbus-blue">nube alianzas</span>
             </h1>
-            <p className="text-lg text-slate-700 font-bold max-w-2xl">
+            <p className="text-base sm:text-lg text-slate-700 font-bold max-w-2xl mx-auto">
               Ahorra uniendo tus envíos con la comunidad. Juntos llegamos más lejos. ☁️🤝
             </p>
           </div>
